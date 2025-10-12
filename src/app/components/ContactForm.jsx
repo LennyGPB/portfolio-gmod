@@ -105,7 +105,7 @@ export default function Contact() {
               </p>
             )}
             <p className="text-white font-aldrich text-center">
-              jessy.pintobarreto@gmail.com
+              lennygomes.hp@gmail.com
             </p>
             <div>
               <input

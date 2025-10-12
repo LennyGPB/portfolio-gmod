@@ -31,21 +31,30 @@ export default function AboutContent() {
       <div className={styles.container__infosMore}>
         <article className={styles.description}>
           <p>
-            Je m&apos;appelle Jessy, et je suis animé par le développement, le
-            design digital et la musique. En tant que Compositeur MAO
+            {/* Je m&apos;appelle Jessy, et je suis animé par le développement, le
+            design digital, la danse & l'écriture. En tant que Compositeur MAO
             (Beatmaker) & Développeur, j&apos;excelle à créer des univers tant
             musicaux que visuels. Mon objectif est d&apos;utiliser la puissance
             infinie des solutions offertes par le web pour résoudre des
             problèmes de manière innovante. Mon engagement dans ces domaines me
             permet d&apos;explorer et de fusionner harmonieusement les mondes du
+            développement et de la création artistique. */}
+
+            Je m&apos;appelle Lenny, et je suis animé par le développement, le
+            design digital, la danse & l'écriture. La fusion de toutes ces compétences
+            m&apos;est utile dans chacun des projets que j&apos;entreprends. Ma soif d'apprendre est
+            inépuisable, et je suis constamment à la recherche de nouvelles idées et de
+            d'inspiration pour enrichir mon travail. Mon engagement dans ces domaines me
+            permet d&apos;explorer et de fusionner harmonieusement les mondes du
             développement et de la création artistique.
           </p>
         </article>
         <div className={styles.skills}>
-          <p>NodeJs & PostGreSQL | MongoDb</p>
+          <p>NodeJs & MySQL | MongoDb/Prisma</p>
           <p>Next.js (ReactJs) | Redux/Zustand</p>
-          <p>Figma & Base Photoshop (Design)</p>
-          <p>FL Studio (MAO)</p>
+          <p>Lua/C++ & Discord.js | Glua/Unity</p>
+          <p>Figma (Design)</p>
+          <p>Blender (3D)</p>
         </div>
       </div>
     </motion.div>

@@ -29,11 +29,9 @@ export default function Presentation() {
           animate={{ x: "40%" }}
           transition={{ ease: "linear", duration: 35, repeat: Infinity }}
         >
-          PINTO BARRETO JESSY{" "}
-          <span className={styles.titleName}>JESSY PINTO BARRETO</span> PINTO
-          BARRETO JESSY{" "}
-          <span className={styles.titleName}>JESSY PINTO BARRETO</span> PINTO
-          BARRETO JESSY
+          GOMES LENNY{" "}
+          <span className={styles.titleName}>LENNY GOMES </span> LENNY {" "}
+          <span className={styles.titleName}> LENNY GOMES</span> LENNY
         </motion.h2>
       </div>
       <div className={styles.container__title2}>
@@ -43,8 +41,8 @@ export default function Presentation() {
           transition={{ ease: "linear", duration: 35, repeat: Infinity }}
           className={styles.otherTitle}
         >
-          WEB DEVELOPER <span className={styles.titleName}>COMPOSITEUR</span>{" "}
-          DEVELOPPEUR WEB <span className={styles.titleName}>COMPOSER</span> WEB
+          WEB DEVELOPER <span className={styles.titleName}>DANCER</span>{" "}
+          DEVELOPPEUR WEB <span className={styles.titleName}>DANSEUR</span> WEB
           DEVELOPER
         </motion.h2>
       </div>
@@ -57,27 +55,27 @@ export default function Presentation() {
           la contemplent... <br />{" "}
         </p>
         <p className={styles.name}>
-          Pinto Barreto Jessy - Web Developer & MAO Composer
+          Gomes LENNY — Web & Game Developer | Danseur
         </p>
         <div className={styles.container__socials}>
           <Link
-            href="mailto:jessy.pintobarreto@gmail.com"
+            href="mailto:lennygomes.hp@gmail.com"
             target="_blank"
             rel="noreferrer"
             className={styles.socials__link}
           >
             <FontAwesomeIcon icon={faEnvelope} size="2x" />
           </Link>
-          <Link
-            href="https://www.linkedin.com/in/jessy-gomes-pinto-barreto/"
+          {/* <Link
+            href="https://www.linkedin.com/in/LENNY-gomes-pinto-barreto/"
             target="_blank"
             rel="noreferrer"
             className={styles.socials__link}
           >
             <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
-          </Link>
+          </Link> */}
           <Link
-            href="https://github.com/jessygomes"
+            href="https://github.com/lennyGPB"
             target="_blank"
             rel="noreferrer"
             className={styles.socials__link}
