@@ -52,8 +52,8 @@ export default function AboutContent() {
         <div className={styles.skills}>
           <p>NodeJs & MySQL | MongoDb/Prisma</p>
           <p>Next.js (ReactJs) | Redux/Zustand</p>
-          <p>Lua/C++ & Discord.js | Glua/Unity</p>
-          <p>Figma (Design)</p>
+          <p>Lua/C++/C# & Discord.js | Glua/Unity/.NET</p>
+          <p>Figma (Design & Interfaces Utilisateur)</p>
           <p>Blender (3D)</p>
         </div>
       </div>

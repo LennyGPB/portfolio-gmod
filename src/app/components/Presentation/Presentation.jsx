@@ -55,7 +55,7 @@ export default function Presentation() {
           la contemplent... <br />{" "}
         </p>
         <p className={styles.name}>
-          Gomes LENNY — Web & Game Developer | Danseur
+          GOMES Lenny — Web & Game Developer | Danseur
         </p>
         <div className={styles.container__socials}>
           <Link
