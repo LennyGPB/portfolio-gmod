@@ -94,7 +94,7 @@ export default function ProjectDetails({ params }) {
               <div className="px-8 sm:px-0 flex flex-col gap-2 text-white tracking-wide text-left text-xs sm:text-sm max-w-[1000px] w-full">
                 {descriptionParagraphs}
               </div>
-              <div className="flex gap-2">
+              {/* <div className="flex gap-2">
                 <Link target="_blank" href={project.link}>
                   <button className="w-28 py-2 rounded-xl bg-white dark:bg-white dark:text-black text-black font-aldrich text-sm font-bold z-50">
                     {" "}
@@ -106,7 +106,7 @@ export default function ProjectDetails({ params }) {
                     Retour
                   </button>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </motion.div>
         </section>

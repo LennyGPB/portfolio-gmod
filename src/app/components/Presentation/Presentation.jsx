@@ -29,9 +29,9 @@ export default function Presentation() {
           animate={{ x: "40%" }}
           transition={{ ease: "linear", duration: 35, repeat: Infinity }}
         >
-          GOMES LENNY{" "}
-          <span className={styles.titleName}>LENNY GOMES </span> LENNY {" "}
-          <span className={styles.titleName}> LENNY GOMES</span> LENNY
+          PURPLE JIN{" "}
+          <span className={styles.titleName}>PURPLE JIN</span> JIN {" "}
+          <span className={styles.titleName}>PURPLE JIN</span> PURPLE
         </motion.h2>
       </div>
       <div className={styles.container__title2}>
@@ -41,8 +41,8 @@ export default function Presentation() {
           transition={{ ease: "linear", duration: 35, repeat: Infinity }}
           className={styles.otherTitle}
         >
-          WEB DEVELOPER <span className={styles.titleName}>DANCER</span>{" "}
-          DEVELOPPEUR WEB <span className={styles.titleName}>DANSEUR</span> WEB
+          GLUA DEVELOPER <span className={styles.titleName}>||</span>{" "}
+          DEVELOPPEUR GLUA <span className={styles.titleName}>||</span> WEB
           DEVELOPER
         </motion.h2>
       </div>
@@ -55,17 +55,17 @@ export default function Presentation() {
           la contemplent... <br />{" "}
         </p>
         <p className={styles.name}>
-          GOMES Lenny — Web & Game Developer | Danseur
+          Jin Purple — GLUA & WEB Developer 
         </p>
         <div className={styles.container__socials}>
-          <Link
+          {/* <Link
             href="mailto:lennygomes.hp@gmail.com"
             target="_blank"
             rel="noreferrer"
             className={styles.socials__link}
           >
             <FontAwesomeIcon icon={faEnvelope} size="2x" />
-          </Link>
+          </Link> */}
           {/* <Link
             href="https://www.linkedin.com/in/LENNY-gomes-pinto-barreto/"
             target="_blank"
@@ -74,14 +74,14 @@ export default function Presentation() {
           >
             <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
           </Link> */}
-          <Link
+          {/* <Link
             href="https://github.com/lennyGPB"
             target="_blank"
             rel="noreferrer"
             className={styles.socials__link}
           >
             <FontAwesomeIcon icon={faGithub} size="2x" />
-          </Link>
+          </Link> */}
         </div>
         {/* <Link href="/mentions-legales">Mentions Légales</Link> */}
       </div>

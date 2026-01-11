@@ -2,58 +2,15 @@
 import { motion } from "framer-motion";
 import { SparklesCore } from "../../app/components/UI/Sparkles";
 import styles from "./Presentation/Presentation.module.css";
-import emailjs from "@emailjs/browser";
-import { useState } from "react";
 
 export default function Contact() {
-  const [confirmationMessage, setConfirmationMessage] = useState("");
-
-  const [form, setForm] = useState({
-    name: "",
-    fonction: "",
-    objet: "",
-    email: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_2wk87pr",
-        "template_u9m00rn",
-        e.target,
-        "OQpdfRliSb-itPKwp"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setForm({
-            name: "",
-            fonction: "",
-            objet: "",
-            email: "",
-            message: "",
-          });
-          setConfirmationMessage("Email envoyé avec succès !");
-          setTimeout(() => {
-            setConfirmationMessage("");
-          }, 5000);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+  const handleCopyDiscord = () => {
+    navigator.clipboard.writeText("jin_purple");
   };
 
   return (
     <section
-      id="about"
+      id="contact"
       className="flex min-h-screen flex-col items-center bg-myblack"
     >
       <div className="h-auto relative w-full overflow-hidden rounded-md">
@@ -95,91 +52,45 @@ export default function Contact() {
             </motion.h2>
           </div>
 
-          <form
-            onSubmit={handleSubmit}
-            className="pt-[2rem] md:pt-[4rem] flex justify-center flex-col gap-5 relative"
-          >
-            {confirmationMessage && (
-              <p className="text-white font-aldrich text-center">
-                {confirmationMessage}
-              </p>
-            )}
-            <p className="text-white font-aldrich text-center">
-              lennygomes.hp@gmail.com
-            </p>
-            <div>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="NOM & PRENOM"
-                className="px-[2rem] py-[0.3rem] w-[20rem] md:py-[0.5rem] bg-slate-50 bg-opacity-10 text-white rounded-md focus:outline-none focus:border-purple-500 transition-all duration-300 ease-in-out"
-                onChange={handleChange}
-                value={form.name}
-                minLength="2"
-                maxLength="30"
-                required
-              />
-            </div>
-            <div>
-              <input
-                type="text"
-                id="fonction"
-                name="fonction"
-                placeholder="FONCTION"
-                className="px-[2rem] py-[0.3rem] w-[20rem] md:py-[0.5rem] bg-slate-50 bg-opacity-10 text-white rounded-md focus:outline-none focus:border-purple-500 transition-all duration-300 ease-in-out"
-                onChange={handleChange}
-                value={form.fonction}
-                minLength="2"
-                maxLength="20"
-              />
-            </div>
-            <div>
-              <input
-                type="text"
-                id="objet"
-                name="objet"
-                placeholder="OBJET"
-                className="px-[2rem] py-[0.3rem] w-[20rem] md:py-[0.5rem] bg-slate-50 bg-opacity-10 text-white rounded-md focus:outline-none focus:border-purple-500 transition-all duration-300 ease-in-out"
-                onChange={handleChange}
-                value={form.objet}
-                minLength="2"
-                maxLength="20"
-                required
-              />
-            </div>
-            <div>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="EMAIL"
-                className="px-[2rem] py-[0.3rem] w-[20rem] md:py-[0.5rem] bg-slate-50 bg-opacity-10 text-white rounded-md focus:outline-none focus:border-purple-500 transition-all duration-300 ease-in-out"
-                onChange={handleChange}
-                value={form.email}
-                required
-              />
-            </div>
-            <div>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="MESSAGE"
-                className="px-[2rem] py-[0.5rem] w-[20rem] bg-slate-500 bg-opacity-10 rounded-md  text-white focus:outline-none focus:border-purple-800 transition-all duration-300 ease-in-out "
-                onChange={handleChange}
-                value={form.message}
-                required
-                minLength="2"
-                maxLength="350"
-              />
-            </div>
-            <button
-              type="submit"
-              className="p-[0.5rem] text-white neon hover:text-white font-aldrich tracking-[0.3rem] bg-gradient-to-r from-black-800 to-zinc-600 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-600 transition-all duration-300 ease-in-out hover:from-purple-600 hover:to-purple-800 hover:ring-2 hover:ring-purple-600 hover:shadow-xl"
+          <div className="pt-[2rem] md:pt-[4rem] flex justify-center flex-col gap-6 relative items-center">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1, duration: 1 }}
+              className="text-white font-aldrich text-center text-lg md:text-xl tracking-wider"
             >
-              ENVOYER
-            </button>
-          </form>
+              CONTACTEZ-MOI VIA DISCORD
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 1.3, duration: 0.8 }}
+              className="flex flex-col items-center gap-4"
+            >
+              <div className="px-[3rem] py-[1rem] bg-slate-50 bg-opacity-10 rounded-md backdrop-blur-sm border border-purple-500 border-opacity-30">
+                <p className="text-white font-aldrich text-2xl md:text-3xl tracking-wider neon">
+                  jin_purple
+                </p>
+              </div>
+
+              <button
+                onClick={handleCopyDiscord}
+                className="px-[2rem] py-[0.5rem] text-white font-aldrich tracking-[0.3rem] bg-gradient-to-r from-black-800 to-zinc-600 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-600 transition-all duration-300 ease-in-out hover:from-purple-600 hover:to-purple-800 hover:ring-2 hover:ring-purple-600 hover:shadow-xl hover:scale-105"
+              >
+                COPIER
+              </button>
+            </motion.div>
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.6, duration: 1 }}
+              className="text-white text-opacity-60 font-aldrich text-center text-sm mt-4 tracking-wide"
+            >
+              gleam-pro@proton.me
+            </motion.p>
+          </div>
         </motion.section>
       </div>
     </section>
