@@ -32,7 +32,7 @@ export default function AboutContent() {
         <article className={styles.description}>
           <p>
             Mon pseudo est Jin Purple (jin_purple sur discord). Je suis développeur glua & web en freelance depuis quelques années.
-            J&apos;ai commencé par le web & le mobile, puis je me suis dirigé vers le développement glua pour Garry&apos;s Mod.
+            J&apos;ai commencé par le web & le mobile, puis je me suis dirigé en parallèle vers le développement glua pour Garry&apos;s Mod.
           </p>
         </article>
         <div className={styles.skills}>
