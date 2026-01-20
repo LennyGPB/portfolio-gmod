@@ -47,13 +47,15 @@ export default function Presentation() {
         </motion.h2>
       </div>
       <div className={styles.container__infosMore}>
-        <Player1 />
-        <p className={styles.container__description}>
+        <Player1 /> 
+        {/* <p className={styles.container__description}>
           Donner vie aux visions & rentrer dans un paysage numérique où son
           univers s’exprime... <br /> Mon art réside dans l’exploration infinie
           des possibles où la lueur prend vie et illumine le regard de ceux qui
           la contemplent... <br />{" "}
-        </p>
+        </p> */}
+        <p className={styles.container__description}>
+          Développeur freelance GLua et WEB depuis plusieurs années, <br /> avec une expérience en développement web, mobile, logiciels de bureau, bots et GLua pour Garry’s Mod.        </p>
         <p className={styles.name}>
           Jin Purple — GLUA & WEB Developer 
         </p>

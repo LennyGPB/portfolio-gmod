@@ -10,10 +10,10 @@ const itemNavbar = [
     text: "Home",
     link: "/",
   },
-  {
-    text: "About",
-    link: "/about",
-  },
+  // {
+  //   text: "About",
+  //   link: "/about",
+  // },
   {
     text: "Projects",
     link: "/projects",
