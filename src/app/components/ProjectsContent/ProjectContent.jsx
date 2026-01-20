@@ -51,13 +51,13 @@ export default function ProjectContent() {
           className={`${styles.filterBtn} ${activeFilter === "Systèmes" ? styles.active : ""}`}
           onClick={() => setActiveFilter("Systèmes")}
         >
-          Garry's Mod - Systèmes
+          Garry&apos;s Mod - Systèmes
         </button>
         <button
           className={`${styles.filterBtn} ${activeFilter === "Sweps" ? styles.active : ""}`}
           onClick={() => setActiveFilter("Sweps")}
         >
-          Garry's Mod - Sweps
+          Garry&apos;s Mod - Sweps
         </button>
       </div>
 
