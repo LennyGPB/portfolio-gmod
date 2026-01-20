@@ -96,6 +96,18 @@ export const projects = [
     finish: true,
   },
   {
+    id: 14,
+    slug: "syst_combos",
+    title: "Systèmes de Combos",
+    categorie: "Systèmes",
+    techno: ["Glua"],
+    descriptionCard: "Systèmes de combos à 2, thème Black Clover.",
+    description:"",
+    link: "https://kpvs9uxsmhns8ncz.public.blob.vercel-storage.com/gleam_spoil2.mp4",
+    image: [ "/image/cover/minia_combos.png"],
+    finish: true,
+  },
+  {
     id: 4,
     slug: "sweps_naruto",
     title: "SWEPS - Naruto #1",
