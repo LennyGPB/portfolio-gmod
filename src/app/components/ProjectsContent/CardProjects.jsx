@@ -41,6 +41,19 @@ export default function CardProject({ filter = "all" }) {
                       alt={project.title}
                     />
                   </a>
+                ) : project.link?.includes("youtube") || project.link?.includes("youtu.be") ? (
+                  <div className="w-full aspect-video rounded-md overflow-hidden">
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src={project.link.replace("watch?v=", "embed/").replace("youtu.be/", "youtube.com/embed/")}
+                      title={project.title}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="rounded-md"
+                    />
+                  </div>
                 ) : (
                   <Link href={`/projects/${project.slug}`}>
                     <Image
